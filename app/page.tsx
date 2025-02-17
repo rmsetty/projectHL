@@ -22,23 +22,29 @@ export default function Home() {
               />
               <span className="font-bold text-lg">RoomateMatch@UTD</span>
             </Link>
+
+            <div className="absolute left-1/2 transform -translate-x-1/2">
+              <h1 className="font-bold text-5xl text-center">Meteor Mate</h1>
+            </div>
             <ThemeToggle />
           </nav>
         </div>
       </header>
+    
+    
 
       <main>
         {/* Hero Section */}
-        <section className="pt-24 pb-16 px-4 bg-background">
+        <section className="pt-24 pb-16 px-4 bg-green-900">
           <div className="container mx-auto text-center max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Find Your Perfect UTD Roommate Match</h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground text-white mb-8">
               Smart matching for UTD students using AI-powered compatibility analysis. Welcoming Class of 2029 and all
               UTD students!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Input type="email" placeholder="Enter your email" className="max-w-xs" />
-              <Button size="lg" className="h-10 px-6">
+              <Input type="email" placeholder="Enter your email" className="max-w-xs bg-green-900" />
+              <Button size="lg" className="h-10 px-6 bg-orange-600 text-white" >
                 Notify when ready
               </Button>
             </div>
@@ -57,10 +63,10 @@ export default function Home() {
         </section>
 
         {/* Quick Solutions Section */}
-        <section className="py-20 bg-secondary/50">
+        <section className="py-20 bg-orange-500">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-4">Quick solutions, less stress</h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-muted-foreground-white text-center mb-12 max-w-2xl mx-auto">
               Find your ideal roommate match with our comprehensive platform designed specifically for UTD students.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
@@ -69,7 +75,7 @@ export default function Home() {
                   <Users className="w-6 h-6 text-blue-500" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">AI-Powered Matching</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground-white">
                   Our advanced algorithm analyzes personality traits and preferences to find your ideal roommate match.
                 </p>
               </div>
@@ -78,7 +84,7 @@ export default function Home() {
                   <Shield className="w-6 h-6 text-green-500" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Verified UTD Students</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground-white">
                   Every user is verified through their UTD email, ensuring a safe and trusted community.
                 </p>
               </div>
@@ -87,7 +93,7 @@ export default function Home() {
                   <Lock className="w-6 h-6 text-purple-500" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Privacy First</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground-white">
                   Your data is always protected. You control what information to share and who can see it.
                 </p>
               </div>
@@ -96,7 +102,7 @@ export default function Home() {
         </section>
 
         {/* Instant Setup Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-green-900">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-16">Instant setup, no hassle</h2>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -147,14 +153,14 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="py-20 bg-secondary/50">
+        <section className="py-20 bg-amber-200">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-4">Our Features</h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-muted-foreground-white-center mb-12 max-w-2xl mx-auto">
               Comprehensive tools designed specifically for UTD students to find their perfect roommate match.
             </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-background">
+            <div className="grid md:grid-cols-3 gap-8 cursor-pointer">
+              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-green-900 transform transition-transform hover:scale-105">
                 <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
                   <Brain className="w-6 h-6 text-blue-500" />
                 </div>
@@ -163,7 +169,7 @@ export default function Home() {
                   Our advanced algorithm analyzes personality traits and preferences to find your ideal roommate match.
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-background">
+              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-green-900 transform transition-transform hover:scale-105">
                 <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center mb-6">
                   <BarChart2 className="w-6 h-6 text-purple-500" />
                 </div>
@@ -173,7 +179,7 @@ export default function Home() {
                   graphs.
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-background">
+              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-green-900 transform transition-transform hover:scale-105">
                 <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-6">
                   <Shield className="w-6 h-6 text-green-500" />
                 </div>
@@ -182,7 +188,7 @@ export default function Home() {
                   Secure system with UTD email and social media verification ensures all users are genuine UTD students.
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-background">
+              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-green-900 transform transition-transform hover:scale-105">
                 <div className="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center mb-6">
                   <Lock className="w-6 h-6 text-yellow-500" />
                 </div>
@@ -191,7 +197,7 @@ export default function Home() {
                   Your data is always protected. You control what information to share and who can see it.
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-background">
+              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-green-900 transform transition-transform hover:scale-105">
                 <div className="w-12 h-12 rounded-full bg-pink-500/10 flex items-center justify-center mb-6">
                   <Users className="w-6 h-6 text-pink-500" />
                 </div>
@@ -201,7 +207,7 @@ export default function Home() {
                   roommate fun and intuitive.
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-background">
+              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-green-900 transform transition-transform hover:scale-105">
                 <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center mb-6">
                   <Share2 className="w-6 h-6 text-indigo-500" />
                 </div>
@@ -216,7 +222,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-green-900">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-4">Trusted by UTD Students</h2>
             <p className="text-muted-foreground text-center mb-12">
@@ -283,7 +289,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary/10">
+        <section className="py-20 bg-green-800">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
             <p className="text-muted-foreground mb-8">Book a demo or sign up now to find your perfect roommate match</p>
@@ -291,7 +297,7 @@ export default function Home() {
               <Button size="lg" className="h-12 px-8">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="h-12 px-8">
+              <Button size="lg" variant="outline" className="h-12 px-8 bg-orange-600">
                 Learn more
               </Button>
             </div>
