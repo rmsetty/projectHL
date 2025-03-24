@@ -46,13 +46,17 @@ export default function RoommatePreferences(){
                 <h2 className="text-black font-bold mb-2">Monthly Budget Range</h2>
                 <p className="text-black mb-4">What's your preferred monthly rent budget?</p>
 
+                {/* Budgets */}
                 <div className="flex space-x-4 mb-4">
+
+                    {/* Minimum Budget */}
                     <select className="border p-2 rounded w-full bg-white text-black" name="minBudget">
                         <option value="">Select minimum</option>
                         <option value="500">$500</option>
                         <option value="1000">$1000</option>
                     </select>
 
+                    {/* Maximum Budget */}
                     <select className="border p-2 rounded w-full bg-white text-black" name="maxBudget">
                         <option value="">Select maximum</option>
                         <option value="1500">$1500</option>
@@ -63,6 +67,7 @@ export default function RoommatePreferences(){
                 <h2 className="text-black font-bold mt-4 mb-2">Move-in Timeline</h2>
                 <p className="text-black mb-4">When are you planning to move?</p>
 
+                {/* Move-in Timeline */}
                 <div className="flex space-x-6">
                     {["ASAP", "Fall Semester", "Spring Semester"].map(option => (
                         <label key={option} className="mr-4">
@@ -81,7 +86,7 @@ export default function RoommatePreferences(){
                 <h2 className="text-black font-bold mt-4 mb-2">Basic Preferences</h2>
                 <p className="text-black mb-4">Set your fundamental roommate preferences</p>
 
-
+                {/* Basic Preferences */}
                 {["Same Gender Roommate Only", "Same Major/Department Preferred", "Same Academic Year Preferred"].map(key => (
                     <div className="flex items-center mb-2" key={key}>
                         <input
@@ -97,6 +102,8 @@ export default function RoommatePreferences(){
 
                 <h2 className="text-black font-bold mt-4 mb-2">LifeStyle Preferences</h2>
                 <p className="text-black mb-4">Define acceptable lifestyle choices</p>
+
+                {/* LifeStyle Preferences */}
                 {["Pet-Friendly", "Smoking Allowed", "Alcohol Consumption Allowed", "Overnight Guests Allowed"].map(key => (
                     <div className="flex items-center mb-2" key={key}>
                         <input
@@ -112,6 +119,7 @@ export default function RoommatePreferences(){
                 <h2 className="text-black font-bold mt-4 mb-2">Sharing Preferences</h2>
                 <p className="text-black mb-4">Indicate what you're comfortable sharing</p>
 
+                {/* Sharing Preferences */}
                 {["Share Kitchen Items", "Share Groceries", "Share Cleaning Supplies", "Share Common Area Furniture"].map(key => (
                     <div className="flex items-center mb-2" key={key}>
                         <input
@@ -124,6 +132,7 @@ export default function RoommatePreferences(){
                     </div>
                 ))}
                 
+                {/* Button to save */}
                 <Button className="bg-blue-500 cursor-pointer flex items-center font-semibold mt-8 w-full h-12">Save Preferences →</Button>
             </div>
         </div>
