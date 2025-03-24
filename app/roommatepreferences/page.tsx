@@ -9,9 +9,8 @@ import { Label } from "recharts"
 export default function RoommatePreferences(){
 
     
-
+    // Setting up a list of preferences using useState
     const [preferences, setPreferences] = useState({
-
         moveIn: "",
         sameGender: false,
         sameMajor: false,
@@ -26,6 +25,7 @@ export default function RoommatePreferences(){
         shareFurniture: false
     })
 
+    // Making sure if the checkbox is ticked, it will send the request to the server
     const handleChange = (e: { target: { name: any; value: any; type: any; checked: any } }) => {
         const {name, value, type, checked} = e.target;
         setPreferences(prev => ({
