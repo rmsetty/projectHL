@@ -1,11 +1,22 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ArrowRight, Shield, Users, BarChart2, Lock, CheckCircle, Brain, Share2 } from "lucide-react"
 import { Input } from "@/components/ui/input"
+import { useRouter } from "next/navigation" 
 
+
+// Intro page
 export default function Home() {
+
+  const router = useRouter();
+
+  const handleSignUp = () => {
+    router.push('/signup');
+  }
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
@@ -294,7 +305,8 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
             <p className="text-muted-foreground mb-8">Book a demo or sign up now to find your perfect roommate match</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="h-12 px-8">
+              
+              <Button size="lg" className="h-12 px-8" onClick={handleSignUp}>
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button size="lg" variant="outline" className="h-12 px-8 bg-orange-600">
