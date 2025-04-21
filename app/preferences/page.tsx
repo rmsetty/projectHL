@@ -2,7 +2,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation";
-
+import { ArrowLeft } from "lucide-react";
 export default function preferences(){
     const router = useRouter();
 
@@ -76,6 +76,12 @@ export default function preferences(){
                 </div>
 
                 <Button className="w-full h-12 font-semibold text-lg bg-blue-500" onClick={handleInterest}>Continue →</Button>
+                <div className="absolute top-6 left-6">
+                    <button onClick={() => router.back()} className="flex items-center text-blue-600 hover:text-blue-800">
+                        <ArrowLeft size={24} className="mr-1"/>
+                        <span className="text-base font-medium">Back</span>
+                    </button>
+                </div>
             </div>
 
             

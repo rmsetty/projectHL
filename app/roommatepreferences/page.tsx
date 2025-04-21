@@ -5,9 +5,13 @@ import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useRouter } from "next/navigation"
 import { Label } from "recharts"
-
+import { ArrowLeft } from "lucide-react"
 export default function RoommatePreferences(){
 
+    const router = useRouter();
+    const handleRoommateSwipe = () =>{
+        router.push('/roommateswipe');
+    }
     
     // Setting up a list of preferences using useState
     const [preferences, setPreferences] = useState({
@@ -34,7 +38,6 @@ export default function RoommatePreferences(){
         }))
     };
 
-    const router = useRouter();
 
     return(
         <div className="min-h-screen bg-white items-center justify-center">
@@ -133,7 +136,13 @@ export default function RoommatePreferences(){
                 ))}
                 
                 {/* Button to save */}
-                <Button className="bg-blue-500 cursor-pointer flex items-center font-semibold mt-8 w-full h-12">Save Preferences →</Button>
+                <Button className="bg-blue-500 cursor-pointer flex items-center font-semibold mt-8 w-full h-12" onClick={handleRoommateSwipe}>Save Preferences →</Button>
+                <div className="absolute top-6 left-6">
+                    <button onClick={() => router.back()} className="flex items-center text-blue-600 hover:text-blue-800">
+                        <ArrowLeft size={24} className="mr-1"/>
+                        <span className="text-base font-medium">Back</span>
+                    </button>
+                </div>
             </div>
         </div>
     )

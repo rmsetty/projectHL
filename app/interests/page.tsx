@@ -3,6 +3,7 @@ import { ReactDOM, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
+import { ArrowLeft } from "lucide-react";
 
 export default function Interests(){
     
@@ -96,7 +97,12 @@ export default function Interests(){
                     
                 </div>
                 <Button className="w-full h-12 font-semibold bg-blue-500 text-white text-center mt-10" onClick={handleRoommatePreference}>Continue →</Button>
-                    
+                <div className="absolute top-6 left-6">
+                    <button onClick={() => router.back()} className="flex items-center text-blue-600 hover: text-blue-800">
+                        <ArrowLeft size={24} className="mr-1"/>
+                        <span className="text-base font-medium">Back</span>
+                    </button>
+                </div>
             </div>
         </div>
     )
