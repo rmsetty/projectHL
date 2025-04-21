@@ -87,6 +87,7 @@ export default function Home() {
             </p>
           )}
 
+          {/* Back Button */}
           <div className='absolute top-6 left-6'>
              <button onClick={() => router.back()} className='flex items-center text-blue-600 hover:text-blue-800'>
                 <ArrowLeft size={24} className='mr-1'/>

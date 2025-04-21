@@ -244,7 +244,11 @@ export default function SignUp(){
                 </select>
                 
             </form>
+
+            {/* Button to continue */}
             <Button type="button" className="w-full h-12 text-lg font-semibold bg-blue-500" onClick={handlePreference}>Next Step →</Button>
+            
+            {/* Back Button */}
             <div className="absolute top-6 left-6">
                 <button onClick={() => router.back()} className="flex items-center text-blue-600 hover: text-blue-800">
                     <ArrowLeft size={24} className="mr-1"/>

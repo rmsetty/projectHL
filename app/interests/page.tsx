@@ -96,7 +96,11 @@ export default function Interests(){
                     </div>
                     
                 </div>
+
+                {/* Button to continue */}
                 <Button className="w-full h-12 font-semibold bg-blue-500 text-white text-center mt-10" onClick={handleRoommatePreference}>Continue →</Button>
+                
+                {/* Back Button */}
                 <div className="absolute top-6 left-6">
                     <button onClick={() => router.back()} className="flex items-center text-blue-600 hover: text-blue-800">
                         <ArrowLeft size={24} className="mr-1"/>

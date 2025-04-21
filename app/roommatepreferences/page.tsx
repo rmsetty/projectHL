@@ -137,6 +137,8 @@ export default function RoommatePreferences(){
                 
                 {/* Button to save */}
                 <Button className="bg-blue-500 cursor-pointer flex items-center font-semibold mt-8 w-full h-12" onClick={handleRoommateSwipe}>Save Preferences →</Button>
+                
+                {/* Back Button */}
                 <div className="absolute top-6 left-6">
                     <button onClick={() => router.back()} className="flex items-center text-blue-600 hover:text-blue-800">
                         <ArrowLeft size={24} className="mr-1"/>
